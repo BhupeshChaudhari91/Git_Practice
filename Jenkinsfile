@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Build") {
             steps {
-               echo "Hello Jenkins 1"
+               git 'https://github.com/BhupeshChaudhari91/newmavenproject.git'
             }
         }
         stage("Test") {
