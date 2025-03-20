@@ -1,14 +1,9 @@
 pipeline{
     agent any
     stages{
-        stage("Build") {
+        stage("SCM Checkout") {
             steps {
                git 'https://github.com/BhupeshChaudhari91/newmavenproject.git'
-            }
-        }
-        stage("Test") {
-            steps {
-                sleep 10
             }
         }
         stage("Deploy") {
