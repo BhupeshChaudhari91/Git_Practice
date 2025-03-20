@@ -8,8 +8,9 @@ pipipeline{
         }
         stage("Compile the Code") {
             steps {
-                withMaven(globalMavenSettingsConfig: '', jdk: 'JDK_HOME', maven: 'MVN_HOME', mavenSettingsConfig: '', traceability: true)
-                sh 'mvn compile'
+                withMaven(globalMavenSettingsConfig: '', jdk: 'JDK_HOME', maven: 'MVN_HOME', mavenSettingsConfig: '', traceability: true){
+                sh 'mvn clean compile'
+            }
             }
         }
     }
