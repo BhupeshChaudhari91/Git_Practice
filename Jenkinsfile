@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("SCM Checkout") {
             steps {
-               git 'https://github.com/BhupeshChaudhari91/newmavenproject.git'
+               git 'https://github.com/BhupeshChaudhari91/Git_Practice.git'
             }
         }
         stage("Deploy") {
